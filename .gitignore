@@ -1,0 +1,7 @@
+# Source and local verification artifacts
+TEAM TOPNOTCH LLP.pdf
+output/
+tmp/
+.playwright-cli/
+.agents/
+.codex/

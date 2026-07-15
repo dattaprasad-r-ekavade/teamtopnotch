@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Topnotch LLP | Turnkey Construction, MEP & Heritage Restoration Goa</title>
+  <meta name="description" content="Team Topnotch LLP delivers turnkey design-build, civil construction, MEP engineering, luxury finishing, heritage restoration and asset maintenance across Goa.">
+  <meta name="keywords" content="turnkey contractor Goa, civil contractor Goa, MEP contractor Goa, heritage restoration Goa, luxury villa construction Goa, waterproofing Goa, Team Topnotch LLP">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#08111f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Team Topnotch LLP | Engineering Meets Luxury Finishing">
+  <meta property="og:description" content="One contract. Complete accountability. Turnkey construction and asset care across Goa.">
+  <meta property="og:image" content="assets/hero-1280.webp">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/hero-1280.webp" as="image" type="image/webp" imagesrcset="assets/hero-640.webp 640w, assets/hero-1280.webp 1280w, assets/hero-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
+  <style>
+    :root {
+      --ink: #08111f;
+      --navy: #0d192a;
+      --slate: #17253a;
+      --line: rgba(255,255,255,.11);
+      --white: #fffaf4;
+      --muted: #aeb8c7;
+      --copper: #f37a24;
+      --copper-soft: #ffae70;
+      --cream: #f1e6d7;
+      --max: 1180px;
+      --shadow: 0 24px 80px rgba(0,0,0,.28);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    body {
+      background: var(--ink);
+      color: var(--white);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+      text-rendering: optimizeLegibility;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: radial-gradient(circle at 80% 10%, rgba(243,122,36,.08), transparent 26%),
+                  linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
+                  linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px);
+      background-size: auto, 64px 64px, 64px 64px;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea, select { font: inherit; }
+    button { color: inherit; }
+    :focus-visible { outline: 3px solid var(--copper-soft); outline-offset: 4px; }
+    .skip-link { position: fixed; left: 16px; top: -80px; z-index: 100; padding: 10px 16px; background: var(--white); color: var(--ink); border-radius: 6px; }
+    .skip-link:focus { top: 12px; }
+    .container { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+    .eyebrow { display: flex; align-items: center; gap: 12px; color: var(--copper-soft); font-size: .74rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 32px; height: 2px; background: var(--copper); }
+    .section { padding: 110px 0; }
+    .section-head { display: grid; grid-template-columns: .8fr 1.2fr; gap: 50px; align-items: end; margin-bottom: 54px; }
+    .section-head h2 { margin-top: 16px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.35rem, 5vw, 4.7rem); font-weight: 400; line-height: .98; letter-spacing: -.04em; }
+    .section-head p { max-width: 640px; color: var(--muted); font-size: 1.04rem; }
+    .accent { color: var(--copper); }
+
+    .site-header { position: fixed; inset: 0 0 auto; z-index: 50; border-bottom: 1px solid var(--line); background: rgba(8,17,31,.88); backdrop-filter: blur(12px); }
+    .nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { width: 250px; flex: 0 0 auto; }
+    .brand img { width: 100%; height: auto; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; font-size: .81rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .nav-links a { color: #d7dde6; transition: color .2s ease; }
+    .nav-links a:hover { color: var(--copper-soft); }
+    .nav-cta { padding: 11px 17px; border: 1px solid rgba(243,122,36,.58); border-radius: 999px; color: var(--white) !important; }
+    .menu-toggle { display: none; width: 44px; height: 44px; background: transparent; border: 1px solid var(--line); border-radius: 50%; cursor: pointer; }
+    .menu-toggle span { display: block; width: 19px; height: 2px; margin: 4px auto; background: var(--white); }
+
+    .hero { position: relative; min-height: 100svh; display: grid; align-items: end; isolation: isolate; overflow: hidden; }
+    .hero-media { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 48%; }
+    .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(4,10,20,.98) 0%, rgba(4,10,20,.87) 42%, rgba(4,10,20,.34) 72%, rgba(4,10,20,.6) 100%), linear-gradient(0deg, var(--ink) 0%, transparent 35%); }
+    .hero-content { padding: 168px 0 88px; max-width: 900px; }
+    .hero .eyebrow { margin-bottom: 26px; }
+    h1 { max-width: 890px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3.5rem, 8.8vw, 7.7rem); font-weight: 400; line-height: .88; letter-spacing: -.055em; }
+    h1 span { display: block; color: var(--copper); font-style: italic; }
+    .hero-copy { max-width: 660px; margin-top: 30px; color: #d1d7df; font-size: clamp(1rem, 1.6vw, 1.22rem); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
+    .btn { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 13px 21px; border: 1px solid transparent; border-radius: 4px; font-size: .78rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; transition: transform .2s ease, background .2s ease, color .2s ease; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--copper); color: #130c07; }
+    .btn-primary:hover { background: #ff9147; }
+    .btn-secondary { border-color: rgba(255,255,255,.36); background: rgba(8,17,31,.45); }
+    .btn-secondary:hover { background: var(--white); color: var(--ink); }
+    .hero-note { display: flex; align-items: center; gap: 14px; margin-top: 44px; color: #adb7c5; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
+    .hero-note svg { color: var(--copper); flex: 0 0 auto; }
+    .hero-index { position: absolute; right: max(20px, calc((100% - var(--max))/2)); bottom: 80px; display: grid; grid-template-columns: auto auto; gap: 20px; align-items: end; }
+    .hero-index strong { color: var(--copper); font-family: Georgia, serif; font-size: 4.4rem; font-weight: 400; line-height: .7; }
+    .hero-index span { max-width: 120px; color: #ced4dd; font-size: .68rem; line-height: 1.4; letter-spacing: .13em; text-transform: uppercase; }
+
+    .trust-bar { border-block: 1px solid var(--line); background: #0a1422; }
+    .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+    .trust-item { position: relative; padding: 35px 30px; border-right: 1px solid var(--line); }
+    .trust-item:first-child { border-left: 1px solid var(--line); }
+    .trust-item strong { display: block; color: var(--copper); font-family: Georgia, serif; font-size: 2.4rem; font-weight: 400; line-height: 1; }
+    .trust-item span { display: block; margin-top: 9px; color: var(--muted); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+    .about-visual { position: relative; min-height: 620px; }
+    .about-visual .main-image { position: absolute; inset: 0 16% 12% 0; width: 84%; height: 88%; object-fit: cover; filter: saturate(.78); }
+    .about-visual .mini-image { position: absolute; right: 0; bottom: 0; width: 48%; aspect-ratio: 1/1.18; object-fit: cover; border: 10px solid var(--ink); box-shadow: var(--shadow); }
+    .about-stamp { position: absolute; top: 8%; right: 3%; width: 128px; aspect-ratio: 1; display: grid; place-items: center; padding: 20px; border: 1px solid rgba(243,122,36,.55); border-radius: 50%; background: rgba(8,17,31,.94); color: var(--copper-soft); text-align: center; font-size: .64rem; font-weight: 800; line-height: 1.5; letter-spacing: .14em; text-transform: uppercase; }
+    .about-copy h2 { margin: 17px 0 26px; font-family: Georgia, serif; font-size: clamp(2.6rem, 5vw, 4.8rem); font-weight: 400; line-height: .98; letter-spacing: -.04em; }
+    .about-copy > p { color: var(--muted); margin-bottom: 18px; }
+    .merger-card { margin-top: 34px; padding: 24px 26px; border-left: 3px solid var(--copper); background: var(--slate); }
+    .merger-card strong { display: block; margin-bottom: 7px; color: var(--white); }
+    .merger-card p { color: var(--muted); font-size: .92rem; }
+
+    .services { background: #0b1625; }
+    .services-grid { display: grid; grid-template-columns: repeat(12,1fr); gap: 16px; }
+    .service-card { position: relative; min-height: 320px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; border: 1px solid var(--line); background: var(--slate); transition: transform .3s ease, border-color .3s ease; }
+    .service-card:hover { transform: translateY(-5px); border-color: rgba(243,122,36,.55); }
+    .service-card:nth-child(1), .service-card:nth-child(4) { grid-column: span 7; }
+    .service-card:nth-child(2), .service-card:nth-child(3) { grid-column: span 5; }
+    .service-card::after { content: attr(data-no); position: absolute; right: 20px; top: 0; color: rgba(255,255,255,.035); font-family: Georgia, serif; font-size: 8.5rem; line-height: 1; }
+    .service-icon { width: 46px; height: 46px; display: grid; place-items: center; border: 1px solid rgba(243,122,36,.38); color: var(--copper); }
+    .service-card h3 { position: relative; z-index: 1; max-width: 390px; margin-top: 54px; font-family: Georgia, serif; font-size: 2rem; font-weight: 400; line-height: 1.08; }
+    .service-card p { position: relative; z-index: 1; max-width: 500px; margin-top: 16px; color: var(--muted); font-size: .92rem; }
+    .service-tags { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 7px; margin-top: 26px; }
+    .service-tags span { padding: 5px 9px; border: 1px solid var(--line); color: #c9d0db; font-size: .66rem; letter-spacing: .07em; text-transform: uppercase; }
+
+    .precision { position: relative; overflow: hidden; }
+    .precision-grid { display: grid; grid-template-columns: .86fr 1.14fr; gap: 70px; align-items: center; }
+    .precision-copy h2 { margin: 18px 0 24px; font-family: Georgia, serif; font-size: clamp(2.8rem, 5vw, 5rem); font-weight: 400; line-height: .98; letter-spacing: -.045em; }
+    .precision-copy p { color: var(--muted); }
+    .quality-row { display: flex; align-items: center; gap: 20px; margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
+    .quality-row strong { color: var(--copper); font-family: Georgia, serif; font-size: 4rem; font-weight: 400; line-height: 1; }
+    .quality-row span { max-width: 190px; color: #d5dbe3; font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .process-list { counter-reset: step; border-top: 1px solid var(--line); }
+    .process-item { counter-increment: step; display: grid; grid-template-columns: 72px 1fr; gap: 15px; padding: 25px 0; border-bottom: 1px solid var(--line); }
+    .process-item::before { content: "0" counter(step); color: var(--copper); font-family: Georgia, serif; font-size: 1.4rem; }
+    .process-item h3 { margin-bottom: 5px; font-size: 1rem; letter-spacing: .03em; }
+    .process-item p { color: var(--muted); font-size: .9rem; }
+
+    .portfolio { background: var(--cream); color: #152033; }
+    .portfolio .eyebrow, .portfolio .accent { color: #9d3f08; }
+    .portfolio .section-head p { color: #4e5c6f; }
+    .project-feature { display: grid; grid-template-columns: 1.25fr .75fr; min-height: 560px; background: var(--ink); color: var(--white); box-shadow: 0 22px 70px rgba(31,23,16,.18); }
+    .project-feature img { width: 100%; height: 100%; object-fit: cover; }
+    .project-info { padding: clamp(34px,6vw,72px); display: flex; flex-direction: column; justify-content: center; }
+    .project-label { color: var(--copper-soft); font-size: .7rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+    .project-info h3 { margin: 14px 0 20px; font-family: Georgia, serif; font-size: clamp(2.1rem, 4vw, 3.7rem); font-weight: 400; line-height: 1; }
+    .project-info p { color: var(--muted); }
+    .project-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 36px; padding-top: 25px; border-top: 1px solid var(--line); }
+    .project-meta dt { color: #8995a5; font-size: .63rem; letter-spacing: .13em; text-transform: uppercase; }
+    .project-meta dd { margin-top: 4px; color: var(--white); font-size: .85rem; }
+    .project-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-top: 18px; }
+    .project-card { position: relative; min-height: 430px; overflow: hidden; background: #111b2a; }
+    .project-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+    .project-card:hover img { transform: scale(1.035); }
+    .project-card::after { content: ""; position: absolute; inset: 25% 0 0; background: linear-gradient(transparent, rgba(4,9,16,.96)); }
+    .project-card-content { position: absolute; inset: auto 0 0; z-index: 2; padding: 28px; color: var(--white); }
+    .project-card-content small { color: var(--copper-soft); font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+    .project-card-content h3 { margin-top: 7px; font-family: Georgia, serif; font-size: 1.7rem; font-weight: 400; line-height: 1.1; }
+    .clients { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 35px; }
+    .clients span { padding: 10px 14px; border: 1px solid rgba(21,32,51,.18); color: #354257; font-size: .7rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+
+    .sectors-grid { display: grid; grid-template-columns: repeat(3,1fr); border: 1px solid var(--line); }
+    .sector { min-height: 200px; padding: 30px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .sector:nth-child(3n) { border-right: 0; }
+    .sector:nth-last-child(-n+3) { border-bottom: 0; }
+    .sector span { color: var(--copper); font-family: Georgia, serif; font-size: 1.4rem; }
+    .sector h3 { margin: 32px 0 9px; font-size: 1rem; }
+    .sector p { color: var(--muted); font-size: .86rem; }
+
+    .timeline { background: #0b1625; }
+    .timeline-track { display: grid; grid-template-columns: repeat(4,1fr); position: relative; margin-top: 25px; }
+    .timeline-track::before { content: ""; position: absolute; left: 0; right: 0; top: 28px; height: 1px; background: #344359; }
+    .milestone { position: relative; padding: 0 30px 0 0; }
+    .milestone::before { content: ""; position: relative; z-index: 1; display: block; width: 13px; height: 13px; margin-top: 22px; margin-bottom: 25px; border: 5px solid var(--navy); border-radius: 50%; background: var(--copper); box-sizing: content-box; }
+    .milestone time { color: var(--copper); font-family: Georgia, serif; font-size: 2rem; }
+    .milestone p { margin-top: 8px; color: var(--muted); font-size: .87rem; }
+
+    .contact { position: relative; overflow: hidden; padding: 115px 0 70px; }
+    .contact::before { content: "T"; position: absolute; right: -3vw; top: -120px; color: rgba(243,122,36,.035); font-family: Georgia, serif; font-size: 38rem; line-height: 1; }
+    .contact-grid { position: relative; display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; }
+    .contact-copy h2 { margin: 16px 0 24px; font-family: Georgia, serif; font-size: clamp(3rem, 6vw, 5.8rem); font-weight: 400; line-height: .9; letter-spacing: -.05em; }
+    .contact-copy > p { max-width: 470px; color: var(--muted); }
+    .contact-details { display: grid; gap: 16px; margin-top: 38px; }
+    .contact-link { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: center; }
+    .contact-link i { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--line); color: var(--copper); font-style: normal; }
+    .contact-link small { display: block; color: #7f8a9a; font-size: .64rem; letter-spacing: .12em; text-transform: uppercase; }
+    .contact-link span { color: #e3e7ed; font-size: .9rem; }
+    .contact-form { padding: clamp(28px,5vw,50px); border: 1px solid var(--line); background: rgba(23,37,58,.65); box-shadow: var(--shadow); }
+    .form-head { margin-bottom: 28px; }
+    .form-head h3 { font-family: Georgia, serif; font-size: 2rem; font-weight: 400; }
+    .form-head p { color: var(--muted); font-size: .84rem; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .field { display: grid; gap: 7px; }
+    .field.full { grid-column: 1/-1; }
+    .field label { color: #bdc6d2; font-size: .68rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .field input, .field select, .field textarea { width: 100%; border: 1px solid #334158; border-radius: 0; background: #0d1828; color: var(--white); padding: 13px 14px; outline: none; }
+    .field textarea { min-height: 115px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--copper); }
+    .contact-form .btn { width: 100%; margin-top: 20px; border: 0; cursor: pointer; }
+    .form-note { margin-top: 12px; color: #8d98a7; font-size: .72rem; }
+
+    .footer { border-top: 1px solid var(--line); padding: 38px 0 28px; }
+    .footer-top { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: end; }
+    .footer-brand img { width: 260px; }
+    .footer-brand p { max-width: 460px; margin-top: 13px; color: #8793a3; font-size: .82rem; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 22px; color: #aeb8c5; font-size: .73rem; letter-spacing: .08em; text-transform: uppercase; }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--line); color: #8996a8; font-size: .7rem; }
+    .footer-bottom a:hover { color: var(--copper-soft); }
+    .whatsapp { position: fixed; right: 20px; bottom: 20px; z-index: 40; width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; background: #25d366; color: #07140c; box-shadow: 0 10px 30px rgba(0,0,0,.3); transition: transform .2s ease; }
+    .whatsapp:hover { transform: translateY(-3px) scale(1.03); }
+
+    @media (max-width: 1050px) {
+      .nav-links { position: fixed; inset: 78px 0 auto; display: none; padding: 28px 20px; flex-direction: column; align-items: stretch; gap: 0; background: #08111f; border-bottom: 1px solid var(--line); }
+      .nav-links.open { display: flex; }
+      .nav-links li a { display: block; padding: 14px; }
+      .menu-toggle { display: block; }
+    }
+    @media (max-width: 900px) {
+      .section { padding: 82px 0; }
+      .section-head, .about-grid, .precision-grid, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
+      .section-head { align-items: start; }
+      .hero-index { display: none; }
+      .trust-grid { grid-template-columns: repeat(2,1fr); }
+      .trust-item:nth-child(3) { border-left: 1px solid var(--line); }
+      .service-card:nth-child(n) { grid-column: span 6; }
+      .project-feature { grid-template-columns: 1fr; }
+      .project-feature img { max-height: 480px; }
+      .project-grid { grid-template-columns: 1fr 1fr; }
+      .project-card:last-child { grid-column: 1/-1; }
+      .sectors-grid { grid-template-columns: repeat(2,1fr); }
+      .sector:nth-child(n) { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+      .sector:nth-child(2n) { border-right: 0; }
+      .sector:nth-last-child(-n+2) { border-bottom: 0; }
+      .timeline-track { grid-template-columns: 1fr 1fr; gap: 40px 20px; }
+      .timeline-track::before { display: none; }
+      .milestone { border-top: 1px solid #344359; }
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-links { justify-content: flex-start; }
+    }
+    @media (max-width: 620px) {
+      .container { width: min(calc(100% - 28px), var(--max)); }
+      .brand { width: 210px; }
+      .hero-content { padding-top: 145px; padding-bottom: 68px; }
+      h1 { font-size: clamp(3.25rem, 17vw, 5.2rem); }
+      .hero::before { background: linear-gradient(90deg, rgba(4,10,20,.96), rgba(4,10,20,.65)), linear-gradient(0deg, var(--ink), transparent 40%); }
+      .hero-actions .btn { width: 100%; }
+      .trust-item { padding: 27px 18px; }
+      .trust-item strong { font-size: 2rem; }
+      .about-visual { min-height: 450px; }
+      .service-card:nth-child(n) { grid-column: 1/-1; min-height: 300px; }
+      .project-grid { grid-template-columns: 1fr; }
+      .project-card:last-child { grid-column: auto; }
+      .sectors-grid { grid-template-columns: 1fr; }
+      .sector:nth-child(n) { border-right: 0; border-bottom: 1px solid var(--line); }
+      .sector:last-child { border-bottom: 0; }
+      .timeline-track { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: auto; }
+      .footer-bottom { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "Team Topnotch LLP",
+    "description": "Turnkey design-build, civil construction, MEP engineering, luxury finishing, heritage restoration and asset maintenance across Goa.",
+    "email": "teamtopnotch.llp@gmail.com",
+    "telephone": "+91-88051-24420",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "H.No 84 Fattawado, Nerul",
+      "addressLocality": "Bardez",
+      "addressRegion": "Goa",
+      "postalCode": "403114",
+      "addressCountry": "IN"
+    },
+    "areaServed": "Goa, India",
+    "knowsAbout": ["Turnkey construction", "Civil engineering", "MEP engineering", "Heritage restoration", "Luxury interiors", "Asset maintenance"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Team Topnotch home"><img src="assets/logo.svg" width="280" height="64" alt="Team Topnotch LLP"></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#sectors">Sectors</a></li>
+        <li><a class="nav-cta" href="#contact">Start a project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-media" src="assets/hero-1280.webp" srcset="assets/hero-640.webp 640w, assets/hero-1280.webp 1280w, assets/hero-1600.webp 1600w" sizes="100vw" width="1920" height="1280" alt="Engineers overseeing a large construction site" fetchpriority="high">
+      <div class="container hero-content">
+        <p class="eyebrow">Complete building solutions in Goa</p>
+        <h1 id="hero-title">Built with strength. <span>Finished with distinction.</span></h1>
+        <p class="hero-copy">From excavation and grey structure to MEP, luxury interiors and lifelong asset care—one expert team brings every stage together under a single accountable contract.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Discuss your project <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="#projects">Explore our work</a>
+        </div>
+        <p class="hero-note">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l7 3v6c0 5-3 8.5-7 11-4-2.5-7-6-7-11V5l7-3z" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 12l2.2 2.2 4.8-5" stroke="currentColor" stroke-width="1.8"/></svg>
+          100% in-house supervision &amp; quality control
+        </p>
+      </div>
+      <div class="hero-index" aria-hidden="true"><strong>30%</strong><span>faster handovers through unified delivery</span></div>
+    </section>
+
+    <aside class="trust-bar" aria-label="Company highlights">
+      <div class="container trust-grid">
+        <div class="trust-item"><strong>25+</strong><span>Years consolidated experience</span></div>
+        <div class="trust-item"><strong>50+</strong><span>Landmark projects completed</span></div>
+        <div class="trust-item"><strong>G+4</strong><span>Structural execution capability</span></div>
+        <div class="trust-item"><strong>1</strong><span>Contract from concept to care</span></div>
+      </div>
+    </aside>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <img class="main-image" src="assets/engineers-on-site.webp" srcset="assets/engineers-600.webp 600w, assets/engineers-on-site.webp 888w" sizes="(max-width: 900px) 70vw, 500px" width="888" height="1089" alt="Construction professionals coordinating work on site" loading="lazy" decoding="async">
+          <img class="mini-image" src="assets/heritage-detail.webp" srcset="assets/heritage-600.webp 600w, assets/heritage-detail.webp 1200w" sizes="(max-width: 900px) 42vw, 260px" width="1200" height="900" alt="Carefully restored heritage architecture detail" loading="lazy" decoding="async">
+          <div class="about-stamp">Engineering<br>meets<br>luxury finishing</div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">Unifying strength and elegance</p>
+          <h2 id="about-title">Two legacies.<br><span class="accent">One standard.</span></h2>
+          <p>Team Topnotch LLP unites the heavy civil and structural concrete capability of R G Contractors &amp; Engineers with premium design, MEP expertise and luxury architectural finishing.</p>
+          <p>The result is a genuinely integrated delivery model: fewer coordination gaps, greater cost visibility and a build that moves cleanly from groundworks to handover—and then into long-term maintenance.</p>
+          <div class="merger-card">
+            <strong>A strategic partnership built for complete accountability.</strong>
+            <p>Led by merger partner Mr. Raju M Pillai with new business holders Er. Rahul Raju Pillai and Abdul Karim Betgiri.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head">
+          <div><p class="eyebrow">One-stop design &amp; build</p><h2 id="services-title">Capability without <span class="accent">compromise.</span></h2></div>
+          <p>Specialists across structure, services, finishing and aftercare work as one team—so the detail on the drawing becomes the quality you see on site.</p>
+        </header>
+        <div class="services-grid">
+          <article class="service-card" data-no="01">
+            <div class="service-icon" aria-hidden="true">⌂</div>
+            <div><h3>Heavy structural &amp; civil engineering</h3><p>Strong G+4 grey structures, precise deep foundations, retaining walls, roads and robust public infrastructure designed for Goa’s coastal conditions.</p><div class="service-tags"><span>Grey shells</span><span>Foundations</span><span>Concrete roads</span><span>Waterproofing</span></div></div>
+          </article>
+          <article class="service-card" data-no="02">
+            <div class="service-icon" aria-hidden="true">✦</div>
+            <div><h3>Luxury architectural finishing</h3><p>Premium tiling, Italian marble, lime plastering, custom teak joinery and refined interior fit-outs executed with artisan attention.</p><div class="service-tags"><span>Marble</span><span>Woodwork</span><span>Fit-outs</span></div></div>
+          </article>
+          <article class="service-card" data-no="03">
+            <div class="service-icon" aria-hidden="true">⚡</div>
+            <div><h3>Integrated MEP systems</h3><p>Electrical distribution, plumbing, sanitary networks, rainwater harvesting and climate-responsive HVAC planned as part of the build—not as an afterthought.</p><div class="service-tags"><span>Electrical</span><span>Plumbing</span><span>HVAC</span></div></div>
+          </article>
+          <article class="service-card" data-no="04">
+            <div class="service-icon" aria-hidden="true">◇</div>
+            <div><h3>Heritage preservation &amp; asset care</h3><p>Structural stabilisation, authentic lime restoration, high-reach church painting, monsoon protection and preventive AMC programmes for significant properties.</p><div class="service-tags"><span>Heritage villas</span><span>Churches</span><span>AMC</span><span>Monsoon care</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section precision" aria-labelledby="precision-title">
+      <div class="container precision-grid">
+        <div class="precision-copy">
+          <p class="eyebrow">Zero-tolerance precision</p>
+          <h2 id="precision-title">One team from soil test to final <span class="accent">touch.</span></h2>
+          <p>Our unified model keeps civil machinery, structural teams, MEP specialists and finish artisans under shared supervision. Every interface is planned, checked and owned.</p>
+          <div class="quality-row"><strong>100%</strong><span>In-house supervision &amp; quality control</span></div>
+        </div>
+        <div class="process-list" aria-label="Our delivery process">
+          <article class="process-item"><div><h3>Discover &amp; de-risk</h3><p>Site review, scope alignment, buildability checks and transparent priorities before mobilisation.</p></div></article>
+          <article class="process-item"><div><h3>Engineer &amp; coordinate</h3><p>Structural planning and integrated MEP layouts resolve critical interfaces before execution.</p></div></article>
+          <article class="process-item"><div><h3>Build &amp; inspect</h3><p>Controlled sequencing, material checks and accountable site supervision at every milestone.</p></div></article>
+          <article class="process-item"><div><h3>Finish &amp; protect</h3><p>Luxury detailing, documented handover and maintenance planning for lasting performance.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head">
+          <div><p class="eyebrow">Selected portfolio</p><h2 id="projects-title">Proven across demanding <span class="accent">environments.</span></h2></div>
+          <p>From luxury residential blocks to cleanroom-compliant pharma upgrades and centuries-old heritage properties, our teams adapt without diluting standards.</p>
+        </header>
+        <article class="project-feature">
+          <img src="assets/villa.webp" width="1200" height="900" alt="Premium multi-storey villa project in Goa" loading="lazy" decoding="async">
+          <div class="project-info">
+            <span class="project-label">Featured execution · Nerul</span>
+            <h3>Turnkey luxury residential blocks</h3>
+            <p>Collaborative execution with Vianaar Infra LLP on dual G+4 luxury residential blocks, handling the journey from grey-shell excavation to high-end architectural handoff.</p>
+            <dl class="project-meta"><div><dt>Typology</dt><dd>Luxury residential</dd></div><div><dt>Scale</dt><dd>Dual G+4 blocks</dd></div><div><dt>Delivery</dt><dd>Turnkey structure</dd></div><div><dt>Location</dt><dd>Nerul, Goa</dd></div></dl>
+          </div>
+        </article>
+        <div class="project-grid">
+          <article class="project-card"><img src="assets/heritage-detail.webp" width="1200" height="900" alt="Restored ornate entrance of a heritage property" loading="lazy" decoding="async"><div class="project-card-content"><small>Heritage restoration</small><h3>Antique Goan villas</h3></div></article>
+          <article class="project-card"><img src="assets/pharma.webp" width="1200" height="900" alt="Clean pharmaceutical production facility" loading="lazy" decoding="async"><div class="project-card-content"><small>Industrial pharma</small><h3>Compliant plant upgrades</h3></div></article>
+          <article class="project-card"><img src="assets/goa-heritage.webp" width="1200" height="900" alt="Colourful historic architecture in Goa" loading="lazy" decoding="async"><div class="project-card-content"><small>Faith heritage</small><h3>High-reach preservation</h3></div></article>
+        </div>
+        <div class="clients" aria-label="Featured clients and partners"><span>GSIDC</span><span>Vianaar Infra LLP</span><span>Isprava</span><span>Zydus Pharma</span><span>Microlabs</span><span>Regal Builders</span><span>Rajdeep</span><span>St. Xavier's College</span><span>Santana Beach Resort</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="sectors" aria-labelledby="sectors-title">
+      <div class="container">
+        <header class="section-head">
+          <div><p class="eyebrow">Sector expertise</p><h2 id="sectors-title">Built to answer the <span class="accent">brief.</span></h2></div>
+          <p>Different sectors create different risks. Our consolidated capability lets us respond with the right structural, MEP, finishing and maintenance expertise.</p>
+        </header>
+        <div class="sectors-grid">
+          <article class="sector"><span>01</span><h3>Luxury residential</h3><p>G+4 structures, premium villas, integrated services and signature interiors.</p></article>
+          <article class="sector"><span>02</span><h3>Industrial pharma</h3><p>Cleanroom-compliant upgrades, security infrastructure, roads and plant support.</p></article>
+          <article class="sector"><span>03</span><h3>Hospitality &amp; leisure</h3><p>Guest-sensitive refurbishments, waterproofing and cyclical asset preservation.</p></article>
+          <article class="sector"><span>04</span><h3>Commercial turnkey</h3><p>Full civil and interior delivery with coordinated plumbing and structural MEP.</p></article>
+          <article class="sector"><span>05</span><h3>Institutional &amp; civic</h3><p>School modernisation, public facilities and athletic infrastructure to safety standards.</p></article>
+          <article class="sector"><span>06</span><h3>Heritage &amp; faith</h3><p>Period-sensitive restoration strengthened for Goa’s demanding monsoon cycles.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline" aria-labelledby="timeline-title">
+      <div class="container">
+        <header class="section-head">
+          <div><p class="eyebrow">Strategic evolution</p><h2 id="timeline-title">Experience that keeps <span class="accent">building.</span></h2></div>
+          <p>A residential civil practice grew into public infrastructure, then evolved into today’s unified turnkey and MEP delivery partnership.</p>
+        </header>
+        <div class="timeline-track">
+          <article class="milestone"><time datetime="2002">2002</time><p>R G Contractors founded with a focus on residential civil projects.</p></article>
+          <article class="milestone"><time datetime="2010">2010</time><p>Capability expanded into educational and major institutional buildings.</p></article>
+          <article class="milestone"><time datetime="2018">2018</time><p>Empanelled by GSIDC for public infrastructure upgrades across Goa.</p></article>
+          <article class="milestone"><time datetime="2026">2026</time><p>Strategic merger establishes a complete turnkey, finishing and MEP solution.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Build with one accountable team</p>
+          <h2 id="contact-title">Let’s shape what comes <span class="accent">next.</span></h2>
+          <p>Share your site, scope or challenge. We’ll help frame the right execution path—from structure and MEP to finishing and long-term care.</p>
+          <div class="contact-details">
+            <a class="contact-link" href="tel:+918805124420"><i aria-hidden="true">☎</i><span><small>Corporate hotline</small>+91 88051 24420</span></a>
+            <a class="contact-link" href="mailto:teamtopnotch.llp@gmail.com"><i aria-hidden="true">✉</i><span><small>Primary email</small>teamtopnotch.llp@gmail.com</span></a>
+            <a class="contact-link" href="https://maps.google.com/?q=H.No+84+Fattawado+Nerul+Bardez+Goa+403114" target="_blank" rel="noopener"><i aria-hidden="true">⌖</i><span><small>Corporate headquarters</small>H.No 84 Fattawado, Nerul, Bardez, Goa 403114</span></a>
+          </div>
+        </div>
+        <form class="contact-form" id="enquiryForm">
+          <div class="form-head"><h3>Request a project conversation</h3><p>Tell us what you’re planning. This form opens a ready-to-send email in your device.</p></div>
+          <div class="form-grid">
+            <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+            <div class="field full"><label for="service">What do you need?</label><select id="service" name="service" required><option value="">Choose a service</option><option>Turnkey design &amp; build</option><option>Structural &amp; civil works</option><option>MEP engineering</option><option>Luxury finishing</option><option>Heritage restoration</option><option>Asset maintenance / AMC</option></select></div>
+            <div class="field full"><label for="message">Project details</label><textarea id="message" name="message" placeholder="Location, property type, approximate scope and ideal timeline"></textarea></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Prepare enquiry <span aria-hidden="true">↗</span></button>
+          <p class="form-note">Prefer to speak directly? Call +91 88051 24420 or WhatsApp us.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><img src="assets/logo.svg" width="280" height="64" alt="Team Topnotch LLP"><p>Complete turnkey design-build, civil, MEP, luxury finishing, heritage preservation and asset maintenance across Goa.</p></div>
+        <nav class="footer-links" aria-label="Footer navigation"><a href="#about">Company</a><a href="#services">Capabilities</a><a href="#projects">Portfolio</a><a href="#contact">Contact</a></nav>
+      </div>
+      <div class="footer-bottom"><p>© <span id="year">2026</span> Team Topnotch LLP. All rights reserved.</p><p>Built for speed, accessibility and discoverability. Photography: company profile &amp; <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a>.</p></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/918805124420?text=Hello%20Team%20Topnotch%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Team Topnotch on WhatsApp">
+    <svg width="25" height="25" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.3-4.7a8.5 8.5 0 1 1 16.2-4.2Z" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 7.7c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c-.2.2-.1.5 0 .7.6 1 1.4 1.8 2.4 2.4.3.2.5.2.7 0l.8-1c.2-.2.4-.2.7-.1l1.8.9c.3.1.4.3.4.5 0 .3-.2 1.5-1.1 2-.7.5-1.7.6-2.4.4-.6-.2-1.4-.5-2.4-1.1-1.7-1.1-2.9-2.5-3.7-4.2-.5-1-.5-1.8-.3-2.4.2-.6.8-1.2 1.3-1.3Z" fill="currentColor"/></svg>
+  </a>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    const form = document.getElementById('enquiryForm');
+    const setMenuState = open => {
+      nav.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+    };
+    toggle.addEventListener('click', () => {
+      setMenuState(!nav.classList.contains('open'));
+    });
+    nav.addEventListener('click', event => {
+      if (event.target.matches('a')) setMenuState(false);
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && nav.classList.contains('open')) {
+        setMenuState(false);
+        toggle.focus();
+      }
+    });
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const data = new FormData(form);
+      const subject = `Project enquiry: ${data.get('service')}`;
+      const body = `Hello Team Topnotch,\n\nName: ${data.get('name')}\nPhone: ${data.get('phone')}\nService: ${data.get('service')}\n\nProject details:\n${data.get('message') || 'Not provided'}\n\nPlease contact me to discuss this project.`;
+      window.location.href = `mailto:teamtopnotch.llp@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
