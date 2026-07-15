@@ -83,7 +83,7 @@
     .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(4,10,20,.98) 0%, rgba(4,10,20,.87) 42%, rgba(4,10,20,.34) 72%, rgba(4,10,20,.6) 100%), linear-gradient(0deg, var(--ink) 0%, transparent 35%); }
     .hero-content { padding: 168px 0 88px; max-width: 900px; }
     .hero .eyebrow { margin-bottom: 26px; }
-    h1 { max-width: 890px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3.5rem, 8.8vw, 7.7rem); font-weight: 400; line-height: .88; letter-spacing: -.055em; }
+    h1 { max-width: 960px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3.5rem, 6.2vw, 6.8rem); font-weight: 400; line-height: .9; letter-spacing: -.05em; }
     h1 span { display: block; color: var(--copper); font-style: italic; }
     .hero-copy { max-width: 660px; margin-top: 30px; color: #d1d7df; font-size: clamp(1rem, 1.6vw, 1.22rem); }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
@@ -109,7 +109,7 @@
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
     .about-visual { position: relative; min-height: 620px; }
     .about-visual .main-image { position: absolute; inset: 0 16% 12% 0; width: 84%; height: 88%; object-fit: cover; filter: saturate(.78); }
-    .about-visual .mini-image { position: absolute; right: 0; bottom: 0; width: 48%; aspect-ratio: 1/1.18; object-fit: cover; border: 10px solid var(--ink); box-shadow: var(--shadow); }
+    .about-visual .mini-image { position: absolute; right: 0; bottom: 0; width: 48%; height: 74%; object-fit: cover; object-position: 50% 48%; border: 10px solid var(--ink); box-shadow: var(--shadow); }
     .about-stamp { position: absolute; top: 8%; right: 3%; width: 128px; aspect-ratio: 1; display: grid; place-items: center; padding: 20px; border: 1px solid rgba(243,122,36,.55); border-radius: 50%; background: rgba(8,17,31,.94); color: var(--copper-soft); text-align: center; font-size: .64rem; font-weight: 800; line-height: 1.5; letter-spacing: .14em; text-transform: uppercase; }
     .about-copy h2 { margin: 17px 0 26px; font-family: Georgia, serif; font-size: clamp(2.6rem, 5vw, 4.8rem); font-weight: 400; line-height: .98; letter-spacing: -.04em; }
     .about-copy > p { color: var(--muted); margin-bottom: 18px; }
@@ -249,7 +249,7 @@
     @media (max-width: 620px) {
       body { text-rendering: auto; }
       body::before { display: none; }
-      .site-header { background: rgba(8,17,31,.97); backdrop-filter: none; }
+      .site-header { background: #08111f; backdrop-filter: none; }
       .container { width: min(calc(100% - 28px), var(--max)); }
       .brand { width: 210px; }
       .hero-content { padding-top: 145px; padding-bottom: 68px; }
@@ -343,8 +343,8 @@
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="container about-grid">
         <div class="about-visual">
-          <img class="main-image" src="assets/engineers-on-site.webp" srcset="assets/engineers-600.webp 600w, assets/engineers-on-site.webp 888w" sizes="(max-width: 900px) 70vw, 500px" width="888" height="1089" alt="Construction professionals coordinating work on site" loading="lazy" decoding="async">
-          <img class="mini-image" src="assets/heritage-detail.webp" srcset="assets/heritage-600.webp 600w, assets/heritage-detail.webp 1200w" sizes="(max-width: 900px) 42vw, 260px" width="1200" height="900" alt="Carefully restored heritage architecture detail" loading="lazy" decoding="async">
+          <img class="main-image" src="assets/engineers-on-site.webp" srcset="assets/engineers-600.webp 600w, assets/engineers-on-site.webp 1400w" sizes="(max-width: 900px) 70vw, 500px" width="1400" height="1089" alt="Construction professionals coordinating work on site" loading="lazy" decoding="async">
+          <img class="mini-image" src="assets/heritage-detail.webp" srcset="assets/heritage-600.webp 600w, assets/heritage-detail.webp 1440w" sizes="(max-width: 900px) 42vw, 260px" width="1440" height="980" alt="Carefully restored heritage architecture detail" loading="lazy" decoding="async">
           <div class="about-stamp">Engineering<br>meets<br>luxury finishing</div>
         </div>
         <div class="about-copy">
@@ -411,7 +411,7 @@
           <p>From luxury residential blocks to cleanroom-compliant pharma upgrades and centuries-old heritage properties, our teams adapt without diluting standards.</p>
         </header>
         <article class="project-feature">
-          <img src="assets/villa.webp" width="1200" height="900" alt="Premium multi-storey villa project in Goa" loading="lazy" decoding="async">
+          <img src="assets/villa.webp" width="1440" height="980" alt="Premium multi-storey villa project in Goa" loading="lazy" decoding="async">
           <div class="project-info">
             <span class="project-label">Featured execution · Nerul</span>
             <h3>Turnkey luxury residential blocks</h3>
@@ -420,9 +420,9 @@
           </div>
         </article>
         <div class="project-grid">
-          <article class="project-card"><img src="assets/heritage-detail.webp" width="1200" height="900" alt="Restored ornate entrance of a heritage property" loading="lazy" decoding="async"><div class="project-card-content"><small>Heritage restoration</small><h3>Antique Goan villas</h3></div></article>
-          <article class="project-card"><img src="assets/pharma.webp" width="1200" height="900" alt="Clean pharmaceutical production facility" loading="lazy" decoding="async"><div class="project-card-content"><small>Industrial pharma</small><h3>Compliant plant upgrades</h3></div></article>
-          <article class="project-card"><img src="assets/goa-heritage.webp" width="1200" height="900" alt="Colourful historic architecture in Goa" loading="lazy" decoding="async"><div class="project-card-content"><small>Faith heritage</small><h3>High-reach preservation</h3></div></article>
+          <article class="project-card"><img src="assets/heritage-detail.webp" width="1440" height="980" alt="Restored ornate entrance of a heritage property" loading="lazy" decoding="async"><div class="project-card-content"><small>Heritage restoration</small><h3>Antique Goan villas</h3></div></article>
+          <article class="project-card"><img src="assets/pharma.webp" width="1440" height="980" alt="Clean pharmaceutical production facility" loading="lazy" decoding="async"><div class="project-card-content"><small>Industrial pharma</small><h3>Compliant plant upgrades</h3></div></article>
+          <article class="project-card"><img src="assets/goa-heritage.webp" width="1440" height="980" alt="Colourful historic architecture in Goa" loading="lazy" decoding="async"><div class="project-card-content"><small>Faith heritage</small><h3>High-reach preservation</h3></div></article>
         </div>
         <div class="clients" aria-label="Featured clients and partners"><span>GSIDC</span><span>Vianaar Infra LLP</span><span>Isprava</span><span>Zydus Pharma</span><span>Microlabs</span><span>Regal Builders</span><span>Rajdeep</span><span>St. Xavier's College</span><span>Santana Beach Resort</span></div>
       </div>
