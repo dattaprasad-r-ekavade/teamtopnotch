@@ -216,17 +216,19 @@
     .whatsapp { position: fixed; right: 20px; bottom: 20px; z-index: 40; width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; background: #25d366; color: #07140c; box-shadow: 0 10px 30px rgba(0,0,0,.3); transition: transform .2s ease; }
     .whatsapp:hover { transform: translateY(-3px) scale(1.03); }
 
-    @media (max-width: 1050px) {
+    @media (max-width: 1200px) {
       .nav-links { position: fixed; inset: 78px 0 auto; display: none; padding: 28px 20px; flex-direction: column; align-items: stretch; gap: 0; background: #08111f; border-bottom: 1px solid var(--line); }
       .nav-links.open { display: flex; }
       .nav-links li a { display: block; padding: 14px; }
       .menu-toggle { display: block; }
+      .hero-content { max-width: 790px; }
+      h1 { font-size: clamp(3.5rem, 8vw, 6.4rem); }
+      .hero-index { display: none; }
     }
     @media (max-width: 900px) {
       .section { padding: 82px 0; }
       .section-head, .about-grid, .precision-grid, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
       .section-head { align-items: start; }
-      .hero-index { display: none; }
       .trust-grid { grid-template-columns: repeat(2,1fr); }
       .trust-item:nth-child(3) { border-left: 1px solid var(--line); }
       .service-card:nth-child(n) { grid-column: span 6; }
@@ -245,6 +247,9 @@
       .footer-links { justify-content: flex-start; }
     }
     @media (max-width: 620px) {
+      body { text-rendering: auto; }
+      body::before { display: none; }
+      .site-header { background: rgba(8,17,31,.97); backdrop-filter: none; }
       .container { width: min(calc(100% - 28px), var(--max)); }
       .brand { width: 210px; }
       .hero-content { padding-top: 145px; padding-bottom: 68px; }
