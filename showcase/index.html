@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Team Topnotch — Luxury Design Showcase</title>
+  <meta name="description" content="Four premium website directions for Team Topnotch LLP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#0a0c0f;--paper:#f4efe7;--gold:#b99557;--muted:#aca79f}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{min-height:100vh;background:var(--ink);color:var(--paper);font-family:Inter,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .shell{width:min(1480px,calc(100% - 48px));margin:auto}
+    header{display:flex;justify-content:space-between;align-items:center;padding:28px 0;border-bottom:1px solid #26282b}
+    header img{width:220px;height:auto}
+    header span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+    .intro{display:grid;grid-template-columns:1.15fr .85fr;gap:8vw;align-items:end;padding:88px 0 64px}
+    .kicker{display:flex;align-items:center;gap:14px;color:var(--gold);font-size:11px;letter-spacing:.24em;text-transform:uppercase}
+    .kicker::before{content:"";width:36px;height:1px;background:currentColor}
+    h1{max-width:880px;margin-top:18px;font:400 clamp(54px,7vw,112px)/.9 "Instrument Serif",Georgia,serif;letter-spacing:-.055em}
+    .intro p{max-width:520px;color:#bbb7b0;font-size:16px;line-height:1.8}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding-bottom:70px}
+    .card{position:relative;min-height:500px;overflow:hidden;border:1px solid #2c2f32;background:#121519}
+    .visual{position:absolute;inset:0;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+    .card:hover .visual{transform:scale(1.025)}
+    .visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%,rgba(0,0,0,.2) 52%,rgba(0,0,0,.92))}
+    .visual img{width:100%;height:100%;object-fit:cover}
+    .atelier .visual{inset:20px 20px 116px 42%;background:#111}
+    .atelier::before{content:"ATELIER";position:absolute;left:28px;top:36px;color:#d6c4a2;font:400 52px/1 "Instrument Serif",Georgia,serif;writing-mode:vertical-rl;z-index:2}
+    .gallery{background:#e8ddce;color:#2a211b}
+    .gallery .visual{inset:0 0 0 39%;clip-path:ellipse(74% 62% at 76% 48%)}
+    .gallery .visual::after{background:linear-gradient(90deg,#e8ddce 0%,transparent 36%,rgba(0,0,0,.25))}
+    .monolith{background:#c8bca9;color:#171613}
+    .monolith::before{content:"03";position:absolute;right:25px;top:-35px;z-index:2;color:#17161318;font:400 190px/1 "Instrument Serif",Georgia,serif}
+    .monolith .visual{inset:0 41% 0 0;clip-path:polygon(0 0,84% 0,100% 18%,100% 100%,0 100%)}
+    .monolith .visual::after{background:linear-gradient(90deg,transparent 45%,#c8bca9)}
+    .monolith .info{color:#171613}.monolith .info small{color:#765836}
+    .heritage{background:#3a1115}
+    .heritage .visual{inset:0 36% 0 0}
+    .heritage .visual::after{background:linear-gradient(90deg,transparent 45%,#3a1115)}
+    .info{position:absolute;z-index:3;left:30px;right:30px;bottom:26px;display:flex;align-items:end;justify-content:space-between;gap:24px}
+    .info small{display:block;margin-bottom:10px;color:#d1ad6d;font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+    .info h2{font:400 clamp(31px,4vw,54px)/.95 "Instrument Serif",Georgia,serif;letter-spacing:-.035em}
+    .info b{flex:0 0 auto;width:52px;height:52px;display:grid;place-items:center;border:1px solid currentColor;border-radius:50%;font-size:20px}
+    .gallery .info{color:#281f19}.gallery .info small{color:#895b39}
+    footer{display:flex;justify-content:space-between;gap:30px;padding:28px 0 42px;border-top:1px solid #26282b;color:#8f8c86;font-size:12px}
+    @media(max-width:850px){
+      .intro{grid-template-columns:1fr;padding-top:60px}.grid{grid-template-columns:1fr}.card{min-height:440px}
+    }
+    @media(max-width:520px){
+      .shell{width:min(100% - 28px,1480px)}header img{width:180px}header span{display:none}
+      h1{font-size:52px}.intro{gap:28px;padding:50px 0 42px}.card{min-height:390px}
+      .atelier .visual{left:35%}.atelier::before{font-size:38px}
+      .info{left:20px;right:20px;bottom:20px}.info b{width:44px;height:44px}
+      footer{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <img src="../assets/logo.svg" alt="Team Topnotch LLP">
+      <span>Luxury digital directions · 2026</span>
+    </header>
+    <main>
+      <section class="intro">
+        <div>
+          <p class="kicker">Design showcase</p>
+          <h1>Four distinct expressions of excellence.</h1>
+        </div>
+        <p>Each direction is a complete luxury concept with its own art direction, layout logic and emotional register. Open any concept to explore the responsive page.</p>
+      </section>
+      <section class="grid" aria-label="Design directions">
+        <a class="card atelier" href="01-atelier.html">
+          <div class="visual"><img src="../assets/hero-1280.webp" alt=""></div>
+          <div class="info"><div><small>Direction 01 · Fashion house</small><h2>Obsidian Atelier</h2></div><b>↗</b></div>
+        </a>
+        <a class="card gallery" href="02-sculpted-light.html">
+          <div class="visual"><img src="../assets/villa-upscaled.webp" alt=""></div>
+          <div class="info"><div><small>Direction 02 · Architectural calm</small><h2>Sculpted Light</h2></div><b>↗</b></div>
+        </a>
+        <a class="card monolith" href="03-travertine-monolith.html">
+          <div class="visual"><img src="../assets/pharma.webp" alt=""></div>
+          <div class="info"><div><small>Direction 03 · Architectural precision</small><h2>Travertine Monolith</h2></div><b>↗</b></div>
+        </a>
+        <a class="card heritage" href="04-heritage-house.html">
+          <div class="visual"><img src="../assets/heritage-detail.webp" alt=""></div>
+          <div class="info"><div><small>Direction 04 · Cultural prestige</small><h2>Heritage House</h2></div><b>↗</b></div>
+        </a>
+      </section>
+    </main>
+    <footer><span>Team Topnotch LLP · Building solutions, Goa</span><span>Select a direction to open the full experience.</span></footer>
+  </div>
+</body>
+</html>

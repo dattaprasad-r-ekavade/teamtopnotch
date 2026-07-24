@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sculpted Light — Team Topnotch</title>
+  <meta name="description" content="A warm architectural-gallery direction for Team Topnotch LLP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <style>
+    :root{--ivory:#eee6da;--cream:#f8f3eb;--cocoa:#2d211b;--clay:#9a5435;--sage:#687066;--line:#cfc2b1}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--ivory);color:var(--cocoa);font-family:"DM Sans",Arial,sans-serif;line-height:1.65}
+    img{display:block;width:100%}a{color:inherit;text-decoration:none}
+    .wrap{width:min(1380px,calc(100% - 70px));margin:auto}
+    header{position:absolute;z-index:5;inset:0 0 auto}
+    nav{height:100px;display:flex;align-items:center;justify-content:space-between}
+    nav img{width:220px;filter:brightness(0) saturate(100%)}.links{display:flex;gap:32px;font-size:10px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase}
+    .links a:last-child{color:var(--clay)}
+    .hero{min-height:100svh;position:relative;display:grid;grid-template-columns:48% 52%;align-items:center;overflow:hidden;padding-top:100px}
+    .hero-copy{padding-left:max(35px,calc((100vw - 1380px)/2));padding-right:5vw;z-index:2}
+    .overline{color:var(--clay);font-size:10px;font-weight:bold;letter-spacing:.24em;text-transform:uppercase}
+    h1{margin-top:20px;font:400 clamp(64px,7vw,128px)/.82 Newsreader,Georgia,serif;letter-spacing:-.065em}
+    h1 i{display:block;color:var(--clay);font-weight:400}
+    .hero-copy>p{max-width:510px;margin-top:34px;color:#675a50;font-size:16px}
+    .hero-copy>a{display:inline-flex;align-items:center;gap:24px;margin-top:34px;padding-bottom:8px;border-bottom:1px solid var(--cocoa);font-size:11px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase}
+    .arch{height:calc(100svh - 70px);align-self:end;position:relative;border-radius:48% 48% 0 0/24% 24% 0 0;overflow:hidden}
+    .arch img{height:100%;object-fit:cover}.arch::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(238,230,218,.25),transparent 30%)}
+    .arch-note{position:absolute;z-index:2;right:30px;bottom:30px;background:rgba(248,243,235,.94);padding:22px 25px;max-width:230px}
+    .arch-note b{font:500 30px Newsreader,Georgia,serif}.arch-note span{display:block;margin-top:6px;font-size:9px;letter-spacing:.13em;text-transform:uppercase}
+    .promise{padding:130px 0;display:grid;grid-template-columns:.8fr 1.2fr;gap:10vw}
+    .promise h2,.work h2,.contact h2{font:400 clamp(52px,6vw,96px)/.9 Newsreader,Georgia,serif;letter-spacing:-.055em}
+    .promise-copy>p{font:400 clamp(25px,3vw,43px)/1.2 Newsreader,Georgia,serif;color:#4a3a30}
+    .promise-copy>p em{color:var(--clay)}
+    .pillars{display:grid;grid-template-columns:1fr 1fr;margin-top:60px;border-top:1px solid var(--line)}
+    .pillar{padding:28px 25px 28px 0;border-bottom:1px solid var(--line)}.pillar:nth-child(odd){border-right:1px solid var(--line)}.pillar:nth-child(even){padding-left:25px}
+    .pillar small{color:var(--clay);font-size:10px;letter-spacing:.18em}.pillar h3{margin-top:12px;font:500 25px/1.1 Newsreader,Georgia,serif}.pillar p{margin-top:12px;color:#74685f;font-size:13px}
+    .materials{background:var(--cocoa);color:var(--cream);padding:110px 0}
+    .materials-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+    .material{min-height:390px;position:relative;overflow:hidden}.material img{height:100%;object-fit:cover;filter:saturate(.75)}
+    .material::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(25,15,10,.92))}
+    .material div{position:absolute;z-index:2;left:25px;bottom:24px}.material b{font:500 31px Newsreader,Georgia,serif}.material span{display:block;color:#d8b998;font-size:9px;letter-spacing:.17em;text-transform:uppercase}
+    .material:nth-child(2){transform:translateY(45px)}
+    .work{padding:160px 0 130px;background:var(--cream)}
+    .work-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:60px}.work-head p{max-width:500px;color:#6d6158}
+    .feature{display:grid;grid-template-columns:1.3fr .7fr;min-height:610px;background:var(--ivory)}
+    .feature>img{height:100%;object-fit:cover}.feature-copy{padding:56px 44px;display:flex;flex-direction:column;justify-content:space-between}
+    .feature-copy small{color:var(--clay);font-size:9px;font-weight:bold;letter-spacing:.2em;text-transform:uppercase}.feature-copy h3{font:500 clamp(42px,4vw,66px)/.92 Newsreader,Georgia,serif;margin-top:16px}
+    .feature-copy p{color:#6f6258;margin-top:25px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:20px;border-top:1px solid var(--line);padding-top:22px}.facts b{display:block;font:500 20px Newsreader,Georgia,serif}.facts span{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#82766c}
+    .contact{padding:120px 0;background:var(--sage);color:var(--cream)}
+    .contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:8vw;align-items:end}.contact h2{max-width:760px}.contact h2 em{color:#e4c5a1;font-weight:400}
+    .contact-card{padding:32px;border:1px solid rgba(255,255,255,.35)}.contact-card p{color:#e0ddd6}.contact-card a{display:block;margin-top:22px;padding:17px;background:var(--cream);color:var(--cocoa);text-align:center;font-size:10px;font-weight:bold;letter-spacing:.15em;text-transform:uppercase}
+    footer{padding:26px 0;display:flex;justify-content:space-between;font-size:10px;color:#7f7369}
+    .back{position:fixed;z-index:9;left:18px;bottom:18px;padding:10px 13px;background:var(--cream);box-shadow:0 5px 25px #0002;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+    @media(max-width:950px){
+      .links a:not(:last-child){display:none}.hero{grid-template-columns:1fr 48%}.promise{grid-template-columns:1fr}.work-head{grid-template-columns:1fr}
+      .feature{grid-template-columns:1fr}.feature>img{max-height:520px}.contact-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:650px){
+      .wrap{width:min(100% - 28px,1380px)}nav{height:80px}nav img{width:180px}
+      .hero{display:block;padding:0}.arch{position:absolute;inset:80px 0 0 24%;height:auto;border-radius:48% 0 0/20% 0 0}.arch::after{background:linear-gradient(90deg,var(--ivory),transparent 65%),linear-gradient(0deg,var(--ivory),transparent 50%)}.arch-note{display:none}
+      .hero-copy{min-height:100svh;padding:140px 14px 70px;display:flex;flex-direction:column;justify-content:center}h1{font-size:59px}.hero-copy>p{max-width:330px}
+      .promise{padding:90px 0;gap:38px}.promise h2,.work h2,.contact h2{font-size:50px}.pillars{grid-template-columns:1fr}.pillar:nth-child(n){padding:25px 0;border-right:0}
+      .materials{padding:80px 0}.materials-grid{display:block}.material{min-height:320px;margin-bottom:10px}.material:nth-child(2){transform:none}
+      .work{padding:90px 0}.feature-copy{padding:32px 24px;gap:45px}.contact{padding:90px 0}footer{flex-direction:column;gap:5px}
+    }
+  </style>
+</head>
+<body>
+  <header><nav class="wrap"><a href="index.html"><img src="../assets/logo.svg" alt="Team Topnotch LLP"></a><div class="links"><a href="#philosophy">Philosophy</a><a href="#craft">Craft</a><a href="#work">Residence</a><a href="#contact">Arrange a meeting</a></div></nav></header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><span class="overline">Turnkey building, thoughtfully composed</span><h1>Form meets<i>fortitude.</i></h1><p>Refined residences and enduring structures shaped by one integrated team—from the first excavation to the final crafted surface.</p><a href="#work">Explore the residence <span>→</span></a></div>
+      <div class="arch"><img src="../assets/villa-upscaled.webp" alt="Luxury residence in Goa"><div class="arch-note"><b>G+4</b><span>Turnkey residential capability</span></div></div>
+    </section>
+    <section class="promise wrap" id="philosophy">
+      <div><span class="overline">A singular practice</span><h2>Beauty needs backbone.</h2></div>
+      <div class="promise-copy"><p>We unite engineering certainty with <em>sensory, human finishing</em>—so design intent survives every decision on site.</p>
+        <div class="pillars">
+          <article class="pillar"><small>01</small><h3>Structure</h3><p>Deep foundations, G+4 shells, retaining systems and public infrastructure.</p></article>
+          <article class="pillar"><small>02</small><h3>Services</h3><p>Coordinated electrical, plumbing, HVAC and water management.</p></article>
+          <article class="pillar"><small>03</small><h3>Finish</h3><p>Natural stone, lime plaster, bespoke joinery and interior fit-out.</p></article>
+          <article class="pillar"><small>04</small><h3>Stewardship</h3><p>Heritage restoration, monsoon resilience and preventive maintenance.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="materials" id="craft"><div class="wrap materials-grid">
+      <article class="material"><img src="../assets/engineers-on-site.webp" alt="Engineer coordinating construction"><div><span>Precision</span><b>Engineered clarity</b></div></article>
+      <article class="material"><img src="../assets/heritage-detail.webp" alt="Detailed heritage doorway"><div><span>Craft</span><b>Material intelligence</b></div></article>
+      <article class="material"><img src="../assets/goa-heritage.webp" alt="Historic Goan architecture"><div><span>Place</span><b>Goan character</b></div></article>
+    </div></section>
+    <section class="work" id="work"><div class="wrap">
+      <div class="work-head"><div><span class="overline">Featured commission</span><h2>A residence of quiet confidence.</h2></div><p>Dual G+4 luxury residential blocks in Nerul, executed collaboratively with Vianaar Infra LLP from excavation and structural shell to architectural handover.</p></div>
+      <article class="feature"><img src="../assets/villa-upscaled.webp" alt="Featured luxury residence"><div class="feature-copy"><div><small>Nerul · Goa</small><h3>Turnkey luxury residential blocks</h3><p>A unified construction journey, resolved with fewer interfaces and a single standard of accountability.</p></div><div class="facts"><div><span>Typology</span><b>Luxury residential</b></div><div><span>Scale</span><b>Dual G+4</b></div><div><span>Delivery</span><b>Turnkey structure</b></div><div><span>Location</span><b>Nerul, Goa</b></div></div></div></article>
+    </div></section>
+    <section class="contact" id="contact"><div class="wrap contact-grid"><div><span class="overline">Begin with a conversation</span><h2>Let’s give your ambition <em>form.</em></h2></div><div class="contact-card"><p>Discuss your property, design vision and desired delivery path directly with Team Topnotch.</p><a href="mailto:teamtopnotch.llp@gmail.com?subject=Project%20consultation">Arrange a private meeting</a><p style="margin-top:18px;font-size:13px">+91 88051 24420 · Nerul, Bardez, Goa</p></div></div></section>
+  </main>
+  <footer class="wrap"><span>© 2026 Team Topnotch LLP</span><span>Complete building solutions · Goa</span></footer>
+  <a class="back" href="index.html">← All concepts</a>
+</body>
+</html>

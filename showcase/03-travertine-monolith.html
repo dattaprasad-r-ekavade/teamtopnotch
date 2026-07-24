@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Travertine Monolith — Team Topnotch</title>
+  <meta name="description" content="A stone-and-carbon modernist luxury direction for Team Topnotch LLP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--stone:#c8bcaa;--chalk:#f1ece4;--carbon:#171817;--ink:#22221f;--bronze:#80613d;--line:#9e9383}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--stone);color:var(--ink);font-family:"Space Grotesk",Arial,sans-serif;line-height:1.5}
+    a{color:inherit;text-decoration:none}img{display:block;width:100%}
+    .rail{position:fixed;z-index:20;inset:0 auto 0 0;width:90px;background:var(--carbon);color:var(--chalk);display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:24px 0}
+    .rail img{width:48px;height:48px;object-fit:contain;object-position:left;overflow:hidden}
+    .rail nav{display:flex;flex-direction:column;align-items:center;gap:33px}.rail nav a{writing-mode:vertical-rl;transform:rotate(180deg);font-size:8px;font-weight:bold;letter-spacing:.22em;text-transform:uppercase;color:#bbb7ae}.rail nav a:hover{color:white}
+    .rail .mark{font:700 12px/1 "Space Grotesk",Arial,sans-serif;letter-spacing:.12em;color:#b29367;writing-mode:vertical-rl;transform:rotate(180deg)}
+    .page{margin-left:90px;overflow:hidden}.wrap{width:min(1400px,calc(100% - 72px));margin:auto}
+    .hero{min-height:100svh;display:grid;grid-template-columns:58% 42%;position:relative}
+    .hero-copy{padding:70px 5vw 70px max(36px,calc((100vw - 1490px)/2));display:flex;flex-direction:column;justify-content:space-between}
+    .topline{display:flex;justify-content:space-between;gap:30px;font-size:9px;font-weight:bold;letter-spacing:.18em;text-transform:uppercase}.topline span:last-child{color:var(--bronze)}
+    h1{margin:75px 0 45px;font:400 clamp(70px,8.5vw,150px)/.77 "Archivo Black","Arial Black",sans-serif;letter-spacing:-.075em;text-transform:uppercase}
+    h1 span{display:block;color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+    .hero-bottom{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}.hero-bottom p{max-width:500px;color:#4c4943;font-size:15px}.hero-bottom a{justify-self:end;display:flex;align-items:center;justify-content:center;width:150px;height:150px;border-radius:50%;background:var(--carbon);color:var(--chalk);font-size:9px;font-weight:bold;letter-spacing:.14em;text-align:center;text-transform:uppercase}
+    .hero-image{position:relative;min-height:100svh;background:var(--carbon);clip-path:polygon(14% 0,100% 0,100% 100%,0 100%,0 18%)}
+    .hero-image img{height:100%;object-fit:cover;filter:saturate(.62) contrast(1.08)}.hero-image::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(19,19,18,.65),transparent 50%)}
+    .hero-image .caption{position:absolute;z-index:2;left:34px;bottom:32px;color:white}.caption b{display:block;font:700 50px/1 "Space Grotesk",Arial,sans-serif}.caption span{font-size:8px;letter-spacing:.17em;text-transform:uppercase;color:#d3c3aa}
+    .ledger{background:var(--chalk);border-block:1px solid var(--line)}.ledger-grid{display:grid;grid-template-columns:repeat(4,1fr)}.ledger article{padding:30px 26px;border-right:1px solid #c8bfb2}.ledger article:last-child{border:0}.ledger b{font:700 36px/1 "Space Grotesk",Arial,sans-serif}.ledger span{display:block;margin-top:8px;color:#746d63;font-size:8px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase}
+    .philosophy{padding:145px 0}.section-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:9vw;align-items:start}.section-tag{font-size:9px;font-weight:bold;letter-spacing:.2em;text-transform:uppercase;color:#765b3a}
+    h2{margin-top:18px;font:400 clamp(54px,6.5vw,108px)/.82 "Archivo Black","Arial Black",sans-serif;letter-spacing:-.065em;text-transform:uppercase}.outline{color:transparent;-webkit-text-stroke:1px var(--ink)}
+    .philosophy-copy{padding-top:45px}.philosophy-copy>p{font:700 clamp(24px,2.8vw,42px)/1.17 "Space Grotesk",Arial,sans-serif;letter-spacing:-.035em}.philosophy-copy>p span{color:var(--bronze)}
+    .principles{display:grid;grid-template-columns:1fr 1fr;margin-top:60px;border-top:1px solid var(--line)}.principle{padding:25px 22px 25px 0;border-bottom:1px solid var(--line)}.principle:nth-child(odd){border-right:1px solid var(--line)}.principle:nth-child(even){padding-left:22px}.principle b{font:700 14px "Space Grotesk",Arial,sans-serif}.principle p{margin-top:10px;color:#625d55;font-size:12px}
+    .systems{background:var(--carbon);color:var(--chalk);padding:120px 0}.systems-head{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:50px}.systems-head p{max-width:500px;color:#aaa79f}.systems h2{max-width:800px}.systems .outline{-webkit-text-stroke-color:var(--chalk)}
+    .bands{border-top:1px solid #3e403e}.band{display:grid;grid-template-columns:90px 1.1fr 1fr 100px;gap:30px;align-items:center;padding:32px 0;border-bottom:1px solid #3e403e}.band>span{color:#967a55;font-size:10px;font-weight:bold}.band h3{font:400 clamp(24px,2.5vw,38px)/1 "Archivo Black","Arial Black",sans-serif;text-transform:uppercase}.band p{color:#9f9e99;font-size:13px}.band i{font-style:normal;text-align:right;font-size:25px;color:#876c48}
+    .portfolio{padding:140px 0;background:var(--chalk)}.portfolio-head{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:52px}.portfolio-head p{max-width:530px;color:#625d55}
+    .gallery{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:390px 390px;gap:10px}.project{position:relative;overflow:hidden;background:var(--carbon)}.project:first-child{grid-row:1/-1}.project img{height:100%;object-fit:cover;transition:transform .6s;filter:saturate(.84)}.project:hover img{transform:scale(1.025)}.project::after{content:"";position:absolute;inset:42% 0 0;background:linear-gradient(transparent,#111e)}
+    .project div{position:absolute;z-index:2;left:25px;right:25px;bottom:22px;color:white;display:flex;justify-content:space-between;align-items:end;gap:20px}.project small{font-size:8px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;color:#d2b991}.project h3{margin-top:7px;font:400 clamp(23px,2.7vw,42px)/.95 "Archivo Black","Arial Black",sans-serif;text-transform:uppercase}.project b{font:700 44px "Space Grotesk",Arial,sans-serif;color:#fff5}
+    .contact{padding:120px 0;background:var(--bronze);color:white}.contact-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:8vw;align-items:end}.contact h2{max-width:800px}.contact .outline{-webkit-text-stroke-color:white}.contact p{max-width:520px;margin-top:25px;color:#ede4d7}
+    .contact-card{background:var(--carbon);padding:34px}.contact-card span{font-size:8px;font-weight:bold;letter-spacing:.18em;text-transform:uppercase;color:#af956f}.contact-card a{display:block;margin-top:17px;padding:16px;border:1px solid #4d4e4b;text-align:center;font-size:10px;font-weight:bold;letter-spacing:.13em;text-transform:uppercase}.contact-card a:last-child{background:var(--chalk);color:var(--carbon)}
+    footer{padding:26px 0;background:var(--carbon);color:#8c8b86}.footer-inner{display:flex;justify-content:space-between;font-size:9px}.back{position:fixed;z-index:25;right:18px;bottom:18px;padding:11px 14px;background:var(--chalk);color:var(--carbon);box-shadow:0 7px 25px #0002;font-size:8px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase}
+    @media(max-width:1050px){
+      .rail{position:absolute;inset:0 0 auto;width:auto;height:78px;flex-direction:row;padding:0 28px}.rail img{width:190px;height:auto}.rail nav{flex-direction:row}.rail nav a{writing-mode:initial;transform:none}.rail .mark{writing-mode:initial;transform:none}
+      .page{margin-left:0}.hero{padding-top:78px;grid-template-columns:55% 45%}.hero-copy{padding-left:36px}.hero-bottom{grid-template-columns:1fr}.hero-bottom a{justify-self:start;width:auto;height:auto;border-radius:0;padding:15px 20px}
+      .section-grid{grid-template-columns:1fr}.philosophy-copy{padding-top:0}.gallery{grid-template-rows:330px 330px}
+    }
+    @media(max-width:760px){
+      body{font-size:15px}
+      .rail{padding:0 20px}.rail nav a:not(:last-child),.rail .mark{display:none}.rail nav a:last-child{padding:10px 13px;border:1px solid #5d5d58}.rail img{width:180px}
+      .hero{display:block;padding-top:78px}.hero-image{position:absolute;inset:78px 0 0 25%;z-index:-1;clip-path:polygon(28% 0,100% 0,100% 100%,0 100%,0 20%)}.hero-image::after{background:linear-gradient(90deg,var(--stone),transparent 72%),linear-gradient(0deg,var(--stone),transparent 40%)}.hero-image .caption{display:none}
+      .hero-copy{min-height:calc(100svh - 78px);padding:55px 20px 50px;justify-content:space-between}.topline span:last-child{display:none}h1{font-size:clamp(61px,18vw,92px);margin:50px 0 38px}.hero-bottom{max-width:440px;gap:24px}
+      .wrap{width:min(100% - 28px,1400px)}.ledger-grid{grid-template-columns:1fr 1fr}.ledger article:nth-child(2){border-right:0}.ledger article:nth-child(-n+2){border-bottom:1px solid #c8bfb2}
+      .philosophy,.systems,.portfolio,.contact{padding:85px 0}.section-grid{gap:35px}h2{font-size:51px}.principles{grid-template-columns:1fr}.principle:nth-child(n){padding:22px 0;border-right:0}
+      .hero-bottom p,.systems-head p,.portfolio-head p,.contact p{font-size:14px}
+      .principle p,.band p{font-size:13px}
+      .section-tag,.topline,.ledger span,.project small,.contact-card span,.footer-inner{font-size:9px}
+      .systems-head{display:block}.systems-head p{margin-top:25px}.band{grid-template-columns:38px 1fr 40px;gap:15px}.band p{grid-column:2/-1}.band i{grid-column:3;grid-row:1}
+      .portfolio-head{grid-template-columns:1fr;gap:30px}.gallery{display:block}.project{height:390px;margin-bottom:9px}.project div{left:18px;right:18px}.project b{font-size:30px}
+      .contact-grid{grid-template-columns:1fr}.contact-card{padding:24px}.footer-inner{flex-direction:column;gap:5px}
+    }
+    @media(max-width:390px){.rail{padding:0 14px}.rail img{width:165px}.hero-copy{padding-inline:14px}h1{font-size:59px}.ledger article{padding:24px 15px}.ledger b{font-size:31px}.project{height:350px}}
+  </style>
+</head>
+<body>
+  <aside class="rail">
+    <a href="index.html"><img src="../assets/logo.svg" alt="Team Topnotch LLP"></a>
+    <nav aria-label="Concept navigation"><a href="#philosophy">Principles</a><a href="#systems">Systems</a><a href="#work">Work</a><a href="#contact">Commission</a></nav>
+    <span class="mark">TT / 03</span>
+  </aside>
+  <div class="page">
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="topline"><span>Complete building solutions · Goa</span><span>Direction 03 / Modernist luxury</span></div>
+          <h1>Built<span>with intent.</span></h1>
+          <div class="hero-bottom"><p>Rigorous engineering, exact coordination and elevated material execution—assembled as one disciplined building system.</p><a href="#contact">Start a<br>commission ↗</a></div>
+        </div>
+        <div class="hero-image"><img src="../assets/pharma.webp" alt="Precision-engineered pharmaceutical environment"><div class="caption"><b>01</b><span>Precision is the first luxury</span></div></div>
+      </section>
+      <section class="ledger"><div class="ledger-grid">
+        <article><b>25+</b><span>Years consolidated</span></article><article><b>50+</b><span>Executed projects</span></article><article><b>G+4</b><span>Structural capability</span></article><article><b>100%</b><span>In-house supervision</span></article>
+      </div></section>
+      <section class="philosophy wrap" id="philosophy"><div class="section-grid">
+        <div><span class="section-tag">Design principle 01</span><h2>Less noise.<br><span class="outline">More control.</span></h2></div>
+        <div class="philosophy-copy"><p>Luxury is not decoration. It is the confidence that <span>every concealed decision</span> has been resolved correctly.</p><div class="principles">
+          <article class="principle"><b>Single accountability</b><p>Structure, services, finish and care led within one coordinated practice.</p></article>
+          <article class="principle"><b>Resolved interfaces</b><p>Critical junctions planned before they become expensive site decisions.</p></article>
+          <article class="principle"><b>Material intelligence</b><p>Natural stone, joinery and specialist finishes executed with restraint.</p></article>
+          <article class="principle"><b>Lifecycle thinking</b><p>Monsoon resilience, access and preventive care designed into the asset.</p></article>
+        </div></div>
+      </div></section>
+      <section class="systems" id="systems"><div class="wrap"><div class="systems-head"><div><span class="section-tag">Integrated capability</span><h2>One system.<br><span class="outline">Four layers.</span></h2></div><p>A specification-led delivery model that keeps performance and finish aligned from excavation to handover.</p></div><div class="bands">
+        <article class="band"><span>01</span><h3>Structural engineering</h3><p>G+4 grey structures, foundations, retaining systems, roads and robust civil works.</p><i>＋</i></article>
+        <article class="band"><span>02</span><h3>Integrated MEP</h3><p>Electrical, plumbing, HVAC, sanitary and rainwater systems coordinated as one network.</p><i>＋</i></article>
+        <article class="band"><span>03</span><h3>Architectural finish</h3><p>Marble, lime plaster, bespoke teak joinery and refined interior execution.</p><i>＋</i></article>
+        <article class="band"><span>04</span><h3>Heritage &amp; care</h3><p>Period-sensitive restoration, monsoon protection and preventive asset programmes.</p><i>＋</i></article>
+      </div></div></section>
+      <section class="portfolio" id="work"><div class="wrap"><div class="portfolio-head"><div><span class="section-tag">Selected work</span><h2>Proof in<br><span class="outline">built form.</span></h2></div><p>Residential, industrial and heritage commissions united by the same focus: buildability, exact coordination and lasting performance.</p></div><div class="gallery">
+        <article class="project"><img src="../assets/villa-upscaled.webp" alt="Luxury villa project in Goa"><div><span><small>Turnkey residential · Nerul</small><h3>Dual G+4 luxury blocks</h3></span><b>01</b></div></article>
+        <article class="project"><img src="../assets/heritage-detail.webp" alt="Restored ornate doorway"><div><span><small>Heritage restoration</small><h3>Antique Goan villas</h3></span><b>02</b></div></article>
+        <article class="project"><img src="../assets/pharma.webp" alt="Clean pharmaceutical facility"><div><span><small>Industrial pharma</small><h3>Compliant upgrades</h3></span><b>03</b></div></article>
+      </div></div></section>
+      <section class="contact" id="contact"><div class="wrap contact-grid"><div><span class="section-tag">Private project enquiries</span><h2>Commission<br><span class="outline">with clarity.</span></h2><p>Share the property, scope and intended outcome. We will frame the right structural, services and finishing path.</p></div><div class="contact-card"><span>Direct access</span><a href="tel:+918805124420">+91 88051 24420</a><a href="mailto:teamtopnotch.llp@gmail.com?subject=Private%20project%20commission">Request a project conversation</a></div></div></section>
+    </main>
+    <footer><div class="wrap footer-inner"><span>© 2026 Team Topnotch LLP</span><span>H.No 84, Fattawado, Nerul, Bardez, Goa</span></div></footer>
+  </div>
+  <a class="back" href="index.html">← All concepts</a>
+</body>
+</html>
