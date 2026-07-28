@@ -129,6 +129,19 @@
     .service-card p { position: relative; z-index: 1; max-width: 500px; margin-top: 16px; color: var(--muted); font-size: .92rem; }
     .service-tags { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 7px; margin-top: 26px; }
     .service-tags span { padding: 5px 9px; border: 1px solid var(--line); color: #c9d0db; font-size: .66rem; letter-spacing: .07em; text-transform: uppercase; }
+    .capability { margin-top: 64px; padding-top: 48px; border-top: 1px solid var(--line); }
+    .capability-head { display: grid; grid-template-columns: .85fr 1.15fr; gap: 44px; align-items: end; margin-bottom: 36px; }
+    .capability-head h3 { margin-top: 14px; font-family: Georgia, serif; font-size: clamp(1.8rem, 3.4vw, 2.9rem); font-weight: 400; line-height: 1.02; letter-spacing: -.03em; }
+    .capability-head p { color: var(--muted); font-size: .95rem; }
+    .capability-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(232px, 1fr)); gap: 16px; }
+    .cap-group { padding: 26px 24px; border: 1px solid var(--line); background: var(--slate); transition: border-color .35s ease; }
+    .cap-group:hover { border-color: rgba(243,122,36,.5); }
+    .cap-img { width: calc(100% + 48px); max-width: none; height: auto; margin: -26px -24px 22px; aspect-ratio: 16/9; object-fit: cover; border-bottom: 1px solid var(--line); filter: saturate(.6) brightness(.72); transition: filter .45s ease; }
+    .cap-group:hover .cap-img { filter: saturate(1) brightness(.92); }
+    .cap-group h4 { color: var(--copper); font-size: .7rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+    .cap-group ul { list-style: none; display: grid; gap: 10px; margin-top: 18px; }
+    .cap-group li { position: relative; padding-left: 17px; color: #cdd4de; font-size: .87rem; line-height: 1.45; }
+    .cap-group li::before { content: ""; position: absolute; left: 0; top: .58em; width: 5px; height: 5px; background: var(--copper); }
 
     .precision { position: relative; overflow: hidden; }
     .precision-grid { display: grid; grid-template-columns: .86fr 1.14fr; gap: 70px; align-items: center; }
@@ -227,7 +240,8 @@
     }
     @media (max-width: 900px) {
       .section { padding: 82px 0; }
-      .section-head, .about-grid, .precision-grid, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
+      .section-head, .about-grid, .precision-grid, .contact-grid, .capability-head { grid-template-columns: 1fr; gap: 44px; }
+      .capability-head { gap: 22px; align-items: start; }
       .section-head { align-items: start; }
       .trust-grid { grid-template-columns: repeat(2,1fr); }
       .trust-item:nth-child(3) { border-left: 1px solid var(--line); }
@@ -383,6 +397,35 @@
             <div class="service-icon" aria-hidden="true">◇</div>
             <div><h3>Heritage preservation &amp; asset care</h3><p>Structural stabilisation, authentic lime restoration, high-reach church painting, monsoon protection and preventive AMC programmes for significant properties.</p><div class="service-tags"><span>Heritage villas</span><span>Churches</span><span>AMC</span><span>Monsoon care</span></div></div>
           </article>
+        </div>
+
+        <div class="capability">
+          <div class="capability-head">
+            <div><p class="eyebrow">Premier work</p><h3>The complete <span class="accent">service index.</span></h3></div>
+            <p>Delivered across residential, commercial and industrial buildings—every trade below is executed and supervised by one accountable team.</p>
+          </div>
+          <div class="capability-grid">
+            <div class="cap-group">
+              <img class="cap-img" src="assets/hero-640.webp" width="640" height="360" alt="Reinforced concrete slab under construction" loading="lazy" decoding="async">
+              <h4>Civil &amp; structural</h4>
+              <ul><li>All civil work</li><li>Pavement &amp; roadworks</li><li>Waterproofing</li><li>Epoxy flooring</li><li>Tiling work — all types</li></ul>
+            </div>
+            <div class="cap-group">
+              <img class="cap-img" src="assets/pharma.webp" width="640" height="360" alt="Plant services and mechanical installation" loading="lazy" decoding="async">
+              <h4>Electrical, mechanical &amp; plumbing</h4>
+              <ul><li>All electrical work</li><li>All plumbing work</li><li>Mechanical work</li><li>AC repair &amp; maintenance</li><li>Inverter &amp; DG servicing</li><li>STP &amp; WTP maintenance</li></ul>
+            </div>
+            <div class="cap-group">
+              <img class="cap-img" src="assets/heritage-600.webp" width="640" height="360" alt="Detailed architectural finishing and joinery" loading="lazy" decoding="async">
+              <h4>Finishing &amp; fit-out</h4>
+              <ul><li>Painting work</li><li>False ceiling &amp; gypsum work</li><li>Carpentry</li><li>Fabrication</li><li>Glass work</li><li>Aluminium &amp; allied works</li></ul>
+            </div>
+            <div class="cap-group">
+              <img class="cap-img" src="assets/villa.webp" width="640" height="360" alt="Maintained luxury property exterior" loading="lazy" decoding="async">
+              <h4>Facility &amp; asset care</h4>
+              <ul><li>Building AMC services</li><li>Property maintenance AMC</li><li>Housekeeping &amp; manpower services</li><li>Deep cleaning &amp; cleaning services</li><li>Swimming pool maintenance</li><li>Landscaping</li><li>Surveillance solutions</li><li>Physical security systems</li></ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>

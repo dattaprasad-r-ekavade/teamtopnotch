@@ -35,6 +35,17 @@
     .principles{display:grid;grid-template-columns:1fr 1fr;margin-top:60px;border-top:1px solid var(--line)}.principle{padding:25px 22px 25px 0;border-bottom:1px solid var(--line)}.principle:nth-child(odd){border-right:1px solid var(--line)}.principle:nth-child(even){padding-left:22px}.principle b{font:700 14px "Space Grotesk",Arial,sans-serif}.principle p{margin-top:10px;color:#625d55;font-size:12px}
     .systems{background:var(--carbon);color:var(--chalk);padding:120px 0}.systems-head{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:50px}.systems-head p{max-width:500px;color:#aaa79f}.systems h2{max-width:800px}.systems .outline{-webkit-text-stroke-color:var(--chalk)}
     .bands{border-top:1px solid #3e403e}.band{display:grid;grid-template-columns:90px 1.1fr 1fr 100px;gap:30px;align-items:center;padding:32px 0;border-bottom:1px solid #3e403e}.band>span{color:#967a55;font-size:10px;font-weight:bold}.band h3{font:400 clamp(24px,2.5vw,38px)/1 "Archivo Black","Arial Black",sans-serif;text-transform:uppercase}.band p{color:#9f9e99;font-size:13px}.band i{font-style:normal;text-align:right;font-size:25px;color:#876c48}
+    .schedule{padding:120px 0;background:var(--chalk)}
+    .schedule-head{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:48px}.schedule-head p{max-width:520px;color:#625d55}
+    .schedule-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:1px;background:#c0b6a7;border:1px solid #c0b6a7}
+    .schedule-col{background:var(--chalk);padding:0 0 30px;overflow:hidden}
+    .schedule-col>*{margin-inline:24px}
+    .schedule-img{margin:0!important;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;filter:grayscale(.85) contrast(1.15);clip-path:polygon(0 0,100% 0,100% 100%,0 100%,0 12%);transition:filter .5s ease,transform .7s ease}
+    .schedule-col:hover .schedule-img{filter:grayscale(0) contrast(1.04);transform:scale(1.03)}
+    .schedule-col h3{margin-top:26px;font:700 11px "Space Grotesk",Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--bronze);padding-bottom:14px;border-bottom:1px solid #c9c0b2}
+    .schedule-col ul{list-style:none;margin-top:16px;display:grid;gap:11px;counter-reset:item}
+    .schedule-col li{counter-increment:item;display:grid;grid-template-columns:26px 1fr;gap:6px;font-size:13.5px;font-weight:500;color:#33322e}
+    .schedule-col li::before{content:counter(item,decimal-leading-zero);color:#9c9182;font-size:10px;font-weight:700;padding-top:3px}
     .portfolio{padding:140px 0;background:var(--chalk)}.portfolio-head{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:52px}.portfolio-head p{max-width:530px;color:#625d55}
     .gallery{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:390px 390px;gap:10px}.project{position:relative;overflow:hidden;background:var(--carbon)}.project:first-child{grid-row:1/-1}.project img{height:100%;object-fit:cover;transition:transform .6s;filter:saturate(.84)}.project:hover img{transform:scale(1.025)}.project::after{content:"";position:absolute;inset:42% 0 0;background:linear-gradient(transparent,#111e)}
     .project div{position:absolute;z-index:2;left:25px;right:25px;bottom:22px;color:white;display:flex;justify-content:space-between;align-items:end;gap:20px}.project small{font-size:8px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;color:#d2b991}.project h3{margin-top:7px;font:400 clamp(23px,2.7vw,42px)/.95 "Archivo Black","Arial Black",sans-serif;text-transform:uppercase}.project b{font:700 44px "Space Grotesk",Arial,sans-serif;color:#fff5}
@@ -57,6 +68,7 @@
       .principle p,.band p{font-size:13px}
       .section-tag,.topline,.ledger span,.project small,.contact-card span,.footer-inner{font-size:9px}
       .systems-head{display:block}.systems-head p{margin-top:25px}.band{grid-template-columns:38px 1fr 40px;gap:15px}.band p{grid-column:2/-1}.band i{grid-column:3;grid-row:1}
+      .schedule{padding:85px 0}.schedule-head{grid-template-columns:1fr;gap:28px}
       .portfolio-head{grid-template-columns:1fr;gap:30px}.gallery{display:block}.project{height:390px;margin-bottom:9px}.project div{left:18px;right:18px}.project b{font-size:30px}
       .contact-grid{grid-template-columns:1fr}.contact-card{padding:24px}.footer-inner{flex-direction:column;gap:5px}
     }
@@ -97,6 +109,15 @@
         <article class="band"><span>03</span><h3>Architectural finish</h3><p>Marble, lime plaster, bespoke teak joinery and refined interior execution.</p><i>＋</i></article>
         <article class="band"><span>04</span><h3>Heritage &amp; care</h3><p>Period-sensitive restoration, monsoon protection and preventive asset programmes.</p><i>＋</i></article>
       </div></div></section>
+      <section class="schedule" id="schedule"><div class="wrap">
+        <div class="schedule-head"><div><span class="section-tag">Premier work</span><h2>Full schedule<br><span class="outline">of works.</span></h2></div><p>Services to residential, commercial and industrial buildings. Every line item below sits inside the same supervised delivery system.</p></div>
+        <div class="schedule-grid">
+          <div class="schedule-col"><img class="schedule-img" src="../assets/hero-640.webp" width="600" height="375" alt="Reinforced concrete slab under construction" loading="lazy" decoding="async"><h3>Civil &amp; structural</h3><ul><li>All civil work</li><li>Pavement &amp; roadworks</li><li>Waterproofing</li><li>Epoxy flooring</li><li>Tiling work — all types</li></ul></div>
+          <div class="schedule-col"><img class="schedule-img" src="../assets/pharma.webp" width="600" height="375" alt="Plant services and mechanical installation" loading="lazy" decoding="async"><h3>Electrical, mech &amp; plumbing</h3><ul><li>All electrical work</li><li>All plumbing work</li><li>Mechanical work</li><li>AC repair &amp; maintenance</li><li>Inverter &amp; DG servicing</li><li>STP &amp; WTP maintenance</li></ul></div>
+          <div class="schedule-col"><img class="schedule-img" src="../assets/heritage-600.webp" width="600" height="375" alt="Detailed architectural finishing and joinery" loading="lazy" decoding="async"><h3>Finishing &amp; fit-out</h3><ul><li>Painting work</li><li>False ceiling &amp; gypsum work</li><li>Carpentry</li><li>Fabrication</li><li>Glass work</li><li>Aluminium &amp; allied works</li></ul></div>
+          <div class="schedule-col"><img class="schedule-img" src="../assets/villa.webp" width="600" height="375" alt="Maintained luxury property exterior" loading="lazy" decoding="async"><h3>Facility &amp; asset care</h3><ul><li>Building AMC services</li><li>Property maintenance AMC</li><li>Housekeeping &amp; manpower</li><li>Deep cleaning services</li><li>Swimming pool maintenance</li><li>Landscaping</li><li>Surveillance solutions</li><li>Physical security systems</li></ul></div>
+        </div>
+      </div></section>
       <section class="portfolio" id="work"><div class="wrap"><div class="portfolio-head"><div><span class="section-tag">Selected work</span><h2>Proof in<br><span class="outline">built form.</span></h2></div><p>Residential, industrial and heritage commissions united by the same focus: buildability, exact coordination and lasting performance.</p></div><div class="gallery">
         <article class="project"><img src="../assets/villa-upscaled.webp" alt="Luxury villa project in Goa"><div><span><small>Turnkey residential · Nerul</small><h3>Dual G+4 luxury blocks</h3></span><b>01</b></div></article>
         <article class="project"><img src="../assets/heritage-detail.webp" alt="Restored ornate doorway"><div><span><small>Heritage restoration</small><h3>Antique Goan villas</h3></span><b>02</b></div></article>

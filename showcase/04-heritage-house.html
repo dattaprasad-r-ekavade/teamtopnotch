@@ -31,6 +31,19 @@
     .services{padding:130px 0;background:var(--deep)}.services-head{display:flex;justify-content:space-between;gap:60px;align-items:end;margin-bottom:55px}.services-head p{max-width:520px;color:#b89991}
     .service-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:12px}.service{position:relative;min-height:330px;padding:35px;border:1px solid var(--line);overflow:hidden}.service:first-child{grid-row:span 2;min-height:672px;background:url("../assets/engineers-on-site.webp") center/cover}.service:first-child::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#21090df5,transparent 70%)}.service:first-child>div{position:absolute;z-index:2;left:35px;right:35px;bottom:35px}
     .service b{color:#d69a6e;font:500 16px "EB Garamond",Georgia,serif}.service h3{margin-top:14px;font:500 34px/1 "EB Garamond",Georgia,serif}.service p{margin-top:16px;color:#bd9e97;font-size:13px}.service:nth-child(2){background:#42161b}.service:nth-child(3){background:#4a211d}
+    .register{padding:120px 0;background:var(--sand);color:var(--ink)}
+    .register h2{font:500 clamp(46px,5.4vw,84px)/.9 "EB Garamond",Georgia,serif;letter-spacing:-.05em}
+    .register-head{display:grid;grid-template-columns:.85fr 1.15fr;gap:7vw;align-items:end;margin-bottom:46px}.register-head p{max-width:540px;color:#6b564c}
+    .register-head .chapter{color:#9b4d32}
+    .register-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(236px,1fr));gap:14px}
+    .register-col{background:var(--paper);padding:0 0 30px;border-top:2px solid #9b4d32;overflow:hidden}
+    .register-col>*{padding-inline:26px}
+    .register-img{padding:0!important;width:100%;height:auto;aspect-ratio:5/3;object-fit:cover;filter:sepia(.32) saturate(.9) contrast(1.04);transition:filter .5s ease,transform .8s ease}
+    .register-col:hover .register-img{filter:sepia(.08) saturate(1);transform:scale(1.04)}
+    .register-col h3{padding-top:26px;font:700 9px Montserrat,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#9b4d32}
+    .register-col ul{list-style:none;margin-top:18px;display:grid;gap:10px}
+    .register-col li{font:500 17px/1.3 "EB Garamond",Georgia,serif;color:#3c2b26;padding-bottom:10px;border-bottom:1px solid #e2d3bd}
+    .register-col li:last-child{border-bottom:0;padding-bottom:0}
     .projects{padding:130px 0;background:var(--paper);color:var(--ink)}.projects-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:7vw;align-items:end;margin-bottom:55px}.projects-head p{max-width:600px;color:#715d53}
     .mosaic{display:grid;grid-template-columns:1.25fr .75fr;grid-template-rows:360px 360px;gap:10px}.project{position:relative;overflow:hidden}.project:first-child{grid-row:1/-1}.project img{height:100%;object-fit:cover;transition:transform .7s}.project:hover img{transform:scale(1.025)}.project::after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,#1f0e0dcf)}.project div{position:absolute;z-index:2;left:26px;bottom:24px;color:white}.project small{color:#e7b889;font-size:9px;letter-spacing:.17em;text-transform:uppercase}.project h3{margin-top:8px;font:500 32px/1 "EB Garamond",Georgia,serif}
     .patrons{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.patrons span{padding:9px 13px;border:1px solid #cbb9a3;color:#705e53;font-size:8px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase}
@@ -43,6 +56,7 @@
       .hero-copy{position:relative;min-height:100svh;padding:145px 14px 70px;display:flex;flex-direction:column;justify-content:center}h1{font-size:59px}
       .legacy,.services,.projects,.contact{padding:90px 0}.legacy-head{gap:32px}.lineage{grid-template-columns:1fr}.era:nth-child(n){padding:24px 0;border-right:0;border-bottom:1px solid #bda68a;min-height:0}
       .services-head{display:block}.services-head p{margin-top:24px}.service{padding:26px;min-height:300px}.service:first-child{min-height:430px}
+      .register{padding:90px 0}.register-head{grid-template-columns:1fr;gap:26px}.register h2{font-size:46px}
       .mosaic{display:block}.project{height:390px;margin-bottom:8px}.projects-head{gap:30px}.contact h2{font-size:50px}.contact-box{padding:24px}footer{flex-direction:column;gap:5px}
       .contact-grid>*{min-width:0}.contact-box a{overflow-wrap:anywhere}
     }
@@ -63,6 +77,15 @@
       <article class="service"><b>02 · The experience</b><h3>Luxury finish &amp; MEP</h3><p>Natural stone, custom joinery, interior fit-outs, plumbing, electrical and HVAC resolved as one composition.</p></article>
       <article class="service"><b>03 · The stewardship</b><h3>Heritage &amp; asset care</h3><p>Lime restoration, high-reach painting, monsoon protection and preventive maintenance programmes.</p></article>
     </div></div></section>
+    <section class="register" id="register"><div class="wrap">
+      <div class="register-head"><div><span class="chapter">Premier work</span><h2>The complete register of services.</h2></div><p>Extended to residential, commercial and industrial buildings—each discipline held to the same standard of craft and stewardship.</p></div>
+      <div class="register-grid">
+        <div class="register-col"><img class="register-img" src="../assets/hero-640.webp" width="600" height="375" alt="Reinforced concrete slab under construction" loading="lazy" decoding="async"><h3>Civil &amp; structural</h3><ul><li>All civil work</li><li>Pavement &amp; roadworks</li><li>Waterproofing</li><li>Epoxy flooring</li><li>Tiling work — all types</li></ul></div>
+        <div class="register-col"><img class="register-img" src="../assets/pharma.webp" width="600" height="375" alt="Plant services and mechanical installation" loading="lazy" decoding="async"><h3>Electrical, mechanical &amp; plumbing</h3><ul><li>All electrical work</li><li>All plumbing work</li><li>Mechanical work</li><li>AC repair &amp; maintenance</li><li>Inverter &amp; DG servicing</li><li>STP &amp; WTP maintenance</li></ul></div>
+        <div class="register-col"><img class="register-img" src="../assets/heritage-600.webp" width="600" height="375" alt="Detailed architectural finishing and joinery" loading="lazy" decoding="async"><h3>Finishing &amp; fit-out</h3><ul><li>Painting work</li><li>False ceiling &amp; gypsum work</li><li>Carpentry</li><li>Fabrication</li><li>Glass work</li><li>Aluminium &amp; allied works</li></ul></div>
+        <div class="register-col"><img class="register-img" src="../assets/villa.webp" width="600" height="375" alt="Maintained luxury property exterior" loading="lazy" decoding="async"><h3>Facility &amp; asset care</h3><ul><li>Building AMC services</li><li>Property maintenance AMC</li><li>Housekeeping &amp; manpower services</li><li>Deep cleaning &amp; cleaning services</li><li>Swimming pool maintenance</li><li>Landscaping</li><li>Surveillance solutions</li><li>Physical security systems</li></ul></div>
+      </div>
+    </div></section>
     <section class="projects" id="projects"><div class="wrap"><div class="projects-head"><div><span class="chapter">Selected commissions</span><h2>Built into Goa’s story.</h2></div><p>Luxury homes, sensitive restorations and clean industrial environments—each approached with respect for purpose, place and longevity.</p></div><div class="mosaic">
       <article class="project"><img src="../assets/villa-upscaled.webp" alt="Luxury residential project"><div><small>Turnkey residence · Nerul</small><h3>Dual G+4 luxury blocks</h3></div></article>
       <article class="project"><img src="../assets/goa-heritage.webp" alt="Historic Goan architecture"><div><small>Faith &amp; heritage</small><h3>High-reach preservation</h3></div></article>
