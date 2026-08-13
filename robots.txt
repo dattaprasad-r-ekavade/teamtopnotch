@@ -1,2 +1,8 @@
 User-agent: *
 Allow: /
+
+# Design concepts and previous site — keep crawl budget on the homepage
+Disallow: /oldpage/
+Disallow: /showcase/
+
+Sitemap: https://teamtopnotch.in/sitemap.xml

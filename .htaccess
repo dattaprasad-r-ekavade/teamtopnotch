@@ -1,0 +1,37 @@
+# Team Top Notch — Hostinger / Apache helpers
+# Prefer apex host and keep crawlers on one canonical origin.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS (Hostinger usually handles this already; safe if already on HTTPS)
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # www → apex
+  RewriteCond %{HTTP_HOST} ^www\.teamtopnotch\.in$ [NC]
+  RewriteRule ^ https://teamtopnotch.in%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Long-lived cache for static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|png|svg|ico|jpg|jpeg)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Custom 404 if present
+ErrorDocument 404 /404.html
